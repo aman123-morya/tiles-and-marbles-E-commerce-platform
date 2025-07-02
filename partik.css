@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f4f7;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: #1e293b;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  color: #f3f4f6;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #facc15;
+}
+
+.hero {
+  background: url('https://www.ecospecifier.com.au/wp-content/uploads/latest-tile-designs-2021-1.jpg') center/cover no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  position: relative;
+ 
+ 
+}
+
+.hero::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero button {
+  padding: 0.7rem 2rem;
+  background: #facc15;
+  border: none;
+  font-size: 1rem;
+  color: #1e293b;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #eab308;
+}
+
+.products-section, .about-section, .contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.products-section h2,
+.about-section h2,
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 260px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.3rem;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: #1e293b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.order-section, .seller-section {
+  padding: 2rem;
+  background-color: #f7f7f7;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.order-section h2, .seller-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#orderForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#orderForm label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#orderForm input, #orderForm select, #orderForm textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#orderForm button {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#orderForm button:hover {
+  background-color: #0056b3;
+}
+
+#ordersList {
+  list-style: none;
+  padding: 0;
+}
+
+#ordersList li {
+  background-color: white;
+  border-left: 5px solid #28a745;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}

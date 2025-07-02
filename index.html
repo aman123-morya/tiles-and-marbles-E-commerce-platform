@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JagdambaTiles.com | Tiles & Granite</title>
+  <link rel="stylesheet" href="partik.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="brand">🪨 JagdambaTiles.com</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Stylish & Durable Tiles & Granite</h1>
+      <p>Wall, Floor, Vitrified, Ceramic, GVT, Double Charge – We Have It All</p>
+      <button onclick="scrollToProducts()">Explore Tiles</button>
+      
+
+    </div>
+  </section>
+
+  <section id="products" class="products-section">
+    <h2>Our Tile Collections</h2>
+    <div class="product-grid" id="productContainer"></div>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About JagdambaTiles.com</h2>
+    <p>We are a trusted provider of premium quality tiles and granite solutions for modern interiors and exteriors.</p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: Jagdambatiles2023.com | Phone: +918207461630</p>
+  </section>
+
+  <footer>
+    <p>&copy; Jagdambatiles2023.com. All rights reserved.</p>
+  </footer>
+ <section id="order" class="order-section">
+  <h2>Place Your Order</h2>
+  <form id="orderForm">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required />
+
+    <label for="phone">Phone number:</label>
+    <input type="tel" id="phone" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required />
+
+    <label for="product">Select Tile Type:</label>
+    <select id="product" required>
+      <option value="">--Select Type--</option>
+      <option value="Wall Tiles">Wall Tiles</option>
+      <option value="Floor Tiles">Floor Tiles</option>
+      <option value="Vitrified Tiles">Vitrified Tiles</option>
+      <option value="Ceramic Tiles">Ceramic Tiles</option>
+      <option value="GVT Tiles">GVT Tiles</option>
+      <option value="Double Charge Tiles">Double Charge Tiles</option>
+      <option value="Granite">Granite</option>
+    </select>
+
+    <label for="quantity">Quantity (Sq Ft):</label>
+    <input type="number" id="quantity" required min="1" />
+
+    <label for="address">Delivery Address:</label>
+    <textarea id="address" rows="3" required></textarea>
+
+    <button type="submit">Submit Order</button>
+  </form>
+  <div id="orderConfirmation" style="display:none; margin-top:10px; color:green;">
+    ✅ Thank you! Your order has been placed successfully.
+  </div>
+</section>
+
+<section id="sellerOrders" class="seller-section">
+  <h2>📦 Orders to Deliver (Seller Side)</h2>
+  <ul id="ordersList"></ul>
+</section>
+
+
+  <script src="partik.js"></script>
+</body>
+</html>
